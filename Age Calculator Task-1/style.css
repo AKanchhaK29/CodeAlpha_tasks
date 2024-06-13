@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient( 109.6deg,  rgba(112,246,255,0.33) 11.2%, rgba(221,108,241,0.26) 42%, rgba(229,106,253,0.71) 71.5%, rgba(123,183,253,1) 100.2% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.age_calculator {
+    background-image: radial-gradient( circle 321px at 8.3% 75.7%,  rgba(209,247,241,1) 0%, rgba(249,213,213,1) 81% );
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(77, 76, 76);
+    padding: 40px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+.age_header{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+label{
+    font-size: 1.5em;
+    text-transform: capitalize;
+    font-style: italic;
+    margin-top: 30px;
+    display: block;
+    color: #3C0753;
+}
+.dob{
+    width: 100%;
+    max-width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 2em;
+    padding: 10px;
+    margin-top: 10px;
+}
+.age_button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+button{
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    box-shadow: 3px 2px 5px grey;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(176,229,208,1) 42%, rgba(92,202,238,0.41) 93.6% );
+}
+button:hover{
+    color: #007F73;
+    background: #FFEFBA;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA); 
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+}
+.clear_button:hover, .calculate_button:hover{
+    color: #FF0000;
+    text-transform: uppercase;
+}
+.age_output{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: #850F8D;
+}
+
+[class*="age_calculator"]{
+    width: 100%;
+}
