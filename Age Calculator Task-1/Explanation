@@ -1,0 +1,30 @@
+HTML :
+It includes a link to an external CSS file for styling. 
+The body contains a div with the class age_calculator, which wraps the entire application. Inside, there is a header displaying "Age Calculator". 
+Below the header, a labeled date input field allows users to select their date of birth. Two buttons are provided: one to calculate the age and another to clear the input field. 
+The results are displayed in a div with the class age_output. 
+Finally, a script tag links to an external JavaScript file, which contains the logic for calculating the age based on the user's input.
+
+CSS:
+It ensures a visually appealing and responsive design. 
+It imports the 'Caveat' font from Google Fonts and resets padding, margin, and box-sizing for all elements. 
+The body features a linear gradient background, centered content with flexbox, and a minimum height of 100vh to ensure full-screen display. 
+The age_calculator class gives the main container a radial gradient background, a solid border, rounded corners, and a shadow for depth. 
+It also includes padding for spacing and a max-width of 800px for responsiveness. The header within this container is styled with uppercase text, a large bold font size, and centered alignment. 
+Labels for inputs are italicized, capitalized, and given a specific color. 
+The date input field has rounded corners, padding, and a large font size for better usability. 
+Buttons within the age_button class are styled with rounded corners, shadows, and gradient backgrounds. 
+They change color and background on hover, and specific button classes ensure distinct hover effects. 
+Finally, the age_output class formats the age display area with flexible layout, spacing, and a distinct font color.
+
+JS :
+It starts by selecting elements from the HTML: the date input field, the calculate button, the clear button, and the output div where the age will be displayed. 
+An event listener is added to the calculate button, triggering a function when clicked. 
+This function checks if a date of birth has been entered; if not, it alerts the user. 
+If a date is entered, it processes the date to extract the year, month, and day. 
+It then compares this date with the current date, ensuring the entered date is not in the future. 
+The code calculates the age by subtracting the birth year, month, and day from the current year, month, and day, respectively. 
+Adjustments are made if the day or month calculations result in negative values, borrowing days from the previous month or months from the previous year as needed. 
+The calculated age is then displayed in the output div. Additionally, an event listener on the clear button resets the input field and clears the displayed age.
+
+Deployment URL : https://basic-calculator-ak.netlify.app/
